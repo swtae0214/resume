@@ -28,7 +28,7 @@ header {
 
 header h1 {
   margin: 1.2em auto;
-  font-family: 'Courgette', cursive;
+  font-family: 'Noto Sans KR', sans-serif;
   text-transform: uppercase;
   font-size: 3em;
   letter-spacing: 0.6em;
@@ -47,9 +47,9 @@ main {
 }
 
 section {
-  margin: auto 1em 4em 2em;
-
+  margin: auto 0.5em 1em 2em;  /* top right bottom left */
 }
+
 
 /* 왼쪽, 프로필 이미지 부분 */
 
@@ -58,6 +58,9 @@ section {
   margin-bottom: 2em;
 }
 #pf-img img {
+  width: 200px;     /* 원하는 가로 크기 */
+  height: 200px;    /* 원하는 세로 크기 (비율 유지하려면 생략 가능) */
+  object-fit: cover;  /* 꽉 채우되 비율 유지 */
   border: 1px solid #ccc;
   border-radius: 50%;
   box-shadow: 5px 5px #eee;
